@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tweets — CSS Basic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="base.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <ul class="nav">
+        <li><span class="logo" title="Home">◆</span></li>
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="tweets.html">Tweets</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <h1>Embedded Tweets (sample)</h1>
+      <p>This is a placeholder page. If you have real embeds, drop the Twitter script below your blockquotes.</p>
+
+      <div class="card">
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">
+            “CSS is awesome.” — every frontend dev, right before discovering a new layout quirk 😅
+          </p>
+          &mdash; Web Dev Notes (@webdevnotes)
+          <a href="https://twitter.com/webdevnotes/status/000000000000000000">May 1, 2025</a>
+        </blockquote>
+      </div>
+
+      <div class="card">
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">
+            Flexbox: because life’s too short to fight floats.
+          </p>
+          &mdash; CSS Humor (@csshumor)
+          <a href="https://twitter.com/csshumor/status/000000000000000001">June 2, 2025</a>
+        </blockquote>
+      </div>
+
+      <!-- Optional: Twitter embed script; harmless if offline -->
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </article>
+
+    <aside>
+      <h2>About this page</h2>
+      <p>Same Flexbox layout applies: article (2/3) + aside (1/3).</p>
+      <div class="card">
+        <strong>Back to:</strong> <a href="index.html">Home</a>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>&copy; 2025 ALX CSS Basics</small>
+    </div>
+  </footer>
+</body>
+</html>

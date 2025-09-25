@@ -1,0 +1,45 @@
+/* -------- Positioning & Flexbox layout (required by tasks) -------- */
+
+/* 1) Make <body> and <main> flex containers */
+body{
+  display: flex;
+  flex-direction: column;           /* header, main, footer stack vertically */
+  min-height: 100vh;
+}
+
+/* Header and footer should hug content; main expands */
+header{ flex: 0 0 auto; }
+main{ 
+  display: flex;
+  flex-direction: row;              /* article | aside side-by-side */
+  flex: auto;                       /* keep automatic height & width, fill remaining space */
+  width: 100%;
+}
+footer{ flex: 0 0 auto; }
+
+/* 2) Article takes 2/3, aside takes 1/3 */
+article{
+  flex: 2 1 0;
+  overflow-y: auto;                 /* scrollable content area */
+  max-height: 100%;
+}
+aside{
+  flex: 1 1 0;
+  overflow-y: auto;                 /* scrollable content area */
+  max-height: 100%;
+}
+
+/* Optional nice-to-have: keep footer visible after long scroll in columns */
+main{ min-height: 0; }              /* allow children to shrink for overflow scrolling */
+
+/* -------- Responsive behavior triggered by body.works_on_smartphone -------- */
+/* Stacking behavior for narrow screens */
+body.works_on_smartphone main{
+  flex-direction: column;           /* stack article then aside */
+}
+
+body.works_on_smartphone article,
+body.works_on_smartphone aside{
+  max-height: none;
+  overflow-y: visible;
+}

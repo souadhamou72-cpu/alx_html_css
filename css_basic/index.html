@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ALX — CSS Basic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="base.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<!-- Task 2: add class for responsive degradation -->
+<body class="works_on_smartphone">
+  <header>
+    <div class="container">
+      <ul class="nav">
+        <!-- Simple “logo” using a unicode char -->
+        <li><span class="logo" title="Home">◆</span></li>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="tweets.html">Tweets</a></li>
+        <li><a href="#docs">Docs</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <h1 id="docs">Welcome to css_basic</h1>
+      <p>This page demonstrates the required Flexbox layout:</p>
+      <ul>
+        <li><strong>body</strong> is a flex container with a vertical column of <code>header</code>, <code>main</code>, <code>footer</code>.</li>
+        <li><strong>main</strong> is a flex container laid out in a row containing <code>article</code> and <code>aside</code>.</li>
+        <li><strong>article</strong> has <code>flex: 2</code> (2/3 width) and scrolls internally.</li>
+        <li><strong>aside</strong> has <code>flex: 1</code> (1/3 width) and also scrolls.</li>
+      </ul>
+
+      <h2>Demo content</h2>
+      <div class="card">
+        <p>Resize the window to see how <code>body.works_on_smartphone</code> stacks the layout vertically.</p>
+      </div>
+
+      <h2>More text to enable scrolling</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non magna at magna gravida aliquet. Integer a tortor a mauris
+        sagittis tincidunt. Donec tincidunt dolor non felis lobortis, sed efficitur lorem posuere. Curabitur tristique, arcu vel commodo
+        viverra, orci neque lobortis risus, sed luctus magna nisl vitae neque. Vestibulum posuere, magna quis lobortis dictum, magna arcu
+        consequat ipsum, ut aliquam libero mauris non magna.
+      </p>
+      <p>
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus aliquet, velit sit amet
+        vestibulum fringilla, metus metus blandit turpis, id gravida mi sem ut est. (Repeat this paragraph as needed to test overflow.)
+      </p>
+      <p>
+        Aliquam erat volutpat. Sed dictum, velit id pretium sagittis, ante nibh aliquet nibh, ac auctor lacus libero in arcu. Integer
+        volutpat dui eget cursus fermentum. Nunc suscipit elit non eros tempus, sit amet pellentesque libero interdum.
+      </p>
+    </article>
+
+    <aside>
+      <h2>Aside</h2>
+      <p>Use this area for related links, author bio, or anything secondary.</p>
+      <div class="card">
+        <strong>Quick Links</strong>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tweets.html">Tweets page</a></li>
+          <li><a href="#docs">Docs section</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <strong>Status</strong>
+        <p>All tasks satisfied: base.css + styles.css linked, Flexbox layout applied, responsive class enabled.</p>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>&copy; 2025 ALX CSS Basics • Built with ♥</small>
+    </div>
+  </footer>
+</body>
+</html>
